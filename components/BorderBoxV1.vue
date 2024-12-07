@@ -1,6 +1,6 @@
 <template>
   <div class="btn-container">
-    <div @click="clicked" class="btn">{{ text || "Click Me!" }}</div>
+    <div @click="clicked" class="btn">Click Me!</div>
   </div>
 </template>
 
@@ -8,45 +8,26 @@
 function clicked() {
   alert("button clicked");
 }
-
-const props = defineProps(["text"]);
-
-const text = ref(props.text);
 </script>
 
 <style lang="scss" scoped>
 .btn {
-  background-color: $primary;
+  background-color: $light_background;
   padding: 1rem;
   width: fit-content;
   text-align: center;
   border-radius: 0.2rem;
+  border: $primary 5px solid;
+  box-shadow: inset 0 0 0 3px #ffffff;
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  position: relative;
 
   &:hover {
-    animation: growNShrink 2s linear;
+    color: $light_text;
+    background-color: $dark_background;
     cursor: pointer;
-  }
-}
-
-.btn-container {
-  margin: 4rem;
-}
-
-@keyframes growNShrink {
-  0% {
-    transform: scale(0.8);
-    background-color: $primary;
-  }
-  50% {
-    transform: scale(1.4);
-    background-color: $secondary;
-  }
-  100% {
-    transform: scale(1);
-    background-color: $primary;
   }
 }
 </style>

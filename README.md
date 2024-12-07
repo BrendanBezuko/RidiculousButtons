@@ -1,3 +1,16 @@
+# Ridiclulous Buttons
+
+A collection of nuxt compatible buttons because why not. This project is going to be a slow burn, I'll try and add a new button per day. My goal here is just to learn more about css and SASS in a public repo.
+
+## Features
+
+- **Light and dark mode**: Every button will be compatible with color-mode nuxt module.
+- **Every Button will exists as a SFC**: Every button should be easily usable by simply copying the SFC. A beautiful thing about vue in general (though I'm not going to bother with vue wihtout ~~Nuxt~~ compatibility).
+
+## Philosophy
+
+I'm not a professional designer, but I do believe everyone should participate in designs because it keeps things interesting with different perspectives on how things ought to look. Design work is actually very hard, so expect these buttons to under go refining as i develop this with better more naunced desgin, features, and animations.
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
