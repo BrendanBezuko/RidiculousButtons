@@ -1,0 +1,24 @@
+<template>
+  <div class="page">
+    <Header></Header>
+    <NavBar></NavBar>
+    <slot></slot>
+  </div>
+</template>
+
+<style lang="scss">
+.page {
+  background-color: $light_background;
+  color: $dark_text;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.dark-mode .page {
+  background-color: $dark_background;
+  color: $light_text;
+}
+</style>
