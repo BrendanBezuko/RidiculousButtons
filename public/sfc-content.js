@@ -1,0 +1,15 @@
+const sfcContent = [
+  {
+    "fileName": "BorderBoxV1.vue",
+    "content": "<template>\n  <div class=\"btn-container\">\n    <div class=\"btn\">{{ text || \"Click\" }}</div>\n  </div>\n</template>\n\n<script setup>\nconst props = defineProps([\"text\"]);\n\nconst text = ref(props.text);\n</script>\n\n<style lang=\"scss\" scoped>\n.btn {\n  background-color: $light_background;\n  padding: 1rem;\n  width: fit-content;\n  text-align: center;\n  border-radius: 0.2rem;\n  border: $primary 5px solid;\n  box-shadow: inset 0 0 0 3px #ffffff;\n  -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  position: relative;\n\n  &:hover {\n    color: $light_text;\n    background-color: $dark_background;\n    cursor: pointer;\n  }\n}\n</style>\n"
+  },
+  {
+    "fileName": "GrowAndShrinkV1.vue",
+    "content": "<template>\n  <div class=\"btn-container\">\n    <div class=\"btn\">{{ text || \"Click\" }}</div>\n  </div>\n</template>\n\n<script setup>\nconst props = defineProps([\"text\"]);\n\nconst text = ref(props.text);\n</script>\n\n<style lang=\"scss\" scoped>\n.btn {\n  background-color: $primary;\n  padding: 1rem;\n  width: fit-content;\n  text-align: center;\n  border-radius: 0.2rem;\n  -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n\n  &:hover {\n    animation: growNShrink 2s linear;\n    cursor: pointer;\n  }\n}\n\n.btn-container {\n  margin: 4rem;\n}\n\n@keyframes growNShrink {\n  0% {\n    transform: scale(0.8);\n    background-color: $primary;\n  }\n  50% {\n    transform: scale(1.4);\n    background-color: $secondary;\n  }\n  100% {\n    transform: scale(1);\n    background-color: $primary;\n  }\n}\n</style>\n"
+  },
+  {
+    "fileName": "ShakeV1.vue",
+    "content": "<template>\n  <div class=\"btn-container\">\n    <div class=\"btn\">{{ text || \"Click\" }}</div>\n  </div>\n</template>\n\n<script setup>\nconst props = defineProps([\"text\"]);\n\nconst text = ref(props.text);\n</script>\n\n<style lang=\"scss\" scoped>\n.btn {\n  background-color: $primary;\n  padding: 1rem;\n  width: fit-content;\n  text-align: center;\n  border-radius: 0.2rem;\n  -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n  box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);\n\n  &:hover {\n    animation: shake 2s linear;\n    cursor: pointer;\n  }\n}\n\n.btn-container {\n  margin: 4rem;\n}\n\n@keyframes shake {\n  0% {\n    transform: rotate(30deg) scale(1);\n    background-color: $primary;\n  }\n  25% {\n    transform: rotate(-30deg) scale(1.1);\n    background-color: $secondary;\n  }\n  50% {\n    transform: rotate(30deg) scale(0.9);\n  }\n  75% {\n    transform: rotate(-30deg) scale(1.1);\n  }\n  100% {\n    transform: rotate(0deg) scale(1);\n    background-color: $primary;\n  }\n}\n</style>\n"
+  }
+];
+export default sfcContent;

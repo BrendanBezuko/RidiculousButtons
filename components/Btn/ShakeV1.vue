@@ -1,13 +1,13 @@
 <template>
   <div class="btn-container">
-    <div @click="clicked" class="btn">Shake</div>
+    <div class="btn">{{ text || "Click" }}</div>
   </div>
 </template>
 
 <script setup>
-function clicked() {
-  alert("button clicked");
-}
+const props = defineProps(["text"]);
+
+const text = ref(props.text);
 </script>
 
 <style lang="scss" scoped>

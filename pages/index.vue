@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <NuxtLink class="link" to="/buttons">
-      <GrowAndShrinkV1 :text="'Start Now'" />
+      <BtnGrowAndShrinkV1 :text="'Start Now'" />
     </NuxtLink>
   </div>
 </template>
