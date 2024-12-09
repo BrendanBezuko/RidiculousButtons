@@ -1,4 +1,6 @@
-# Ridiclulous Buttons
+![Ridiculous Buttons logo](./logo.png)
+
+# Ridiculous Buttons
 
 A collection of nuxt compatible buttons. Why? because why not. This project is going to move slow, but I'll try and add a new button per day and improve as i go. My goal is to learn more about css and SASS in a public repo and maybe provide someone with a free button or two for their website.
 

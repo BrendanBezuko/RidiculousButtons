@@ -12,7 +12,9 @@ const text = ref(props.text);
 
 <style lang="scss" scoped>
 .btn {
-  background-color: $light_background;
+  color: $dark_text;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
   padding: 1rem;
   width: fit-content;
   text-align: center;

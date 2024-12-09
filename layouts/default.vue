@@ -8,7 +8,7 @@
 
 <style lang="scss">
 .page {
-  background-color: $light_background;
+  background-color: $begie;
   color: $dark_text;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -18,7 +18,7 @@
 }
 
 .dark-mode .page {
-  background-color: $dark_background;
+  background-color: $grey;
   color: $light_text;
 }
 </style>

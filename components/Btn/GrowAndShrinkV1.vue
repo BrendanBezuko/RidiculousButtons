@@ -12,6 +12,8 @@ const text = ref(props.text);
 
 <style lang="scss" scoped>
 .btn {
+  color: $dark_text;
+  text-decoration: none;
   background-color: $primary;
   padding: 1rem;
   width: fit-content;
