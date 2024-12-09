@@ -5,8 +5,8 @@
     <h3>Built with Nuxt 3 and Sass</h3>
 
     <p>
-      The focus of this project is to develop high quality buttons using onlycss
-      and scss, avoiding any use of pre built styles such as shacdn, tailwind,
+      The focus of this project is to develop high quality buttons using CSS and
+      SCSS, avoiding any use of pre built styles such as shacdn, tailwind,
       bootstrap. The goal in doing so is to come up with unique looking
       components.
     </p>

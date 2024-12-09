@@ -1,6 +1,6 @@
 <template>
   <h1 class="poppins-bold">Ridiculous Btns</h1>
-  <p>A collection of Nuxt 3 compatible buttons.</p>
+  <p>Stand out with this collection of Nuxt 3 compatible buttons.</p>
 </template>
 
 <style lang="scss">

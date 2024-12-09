@@ -1,7 +1,8 @@
 <template>
   <div class="page">
     <div class="section">
-      <h2>Animations</h2>
+      <p>Just click to copy the SFC and use in your own code</p>
+      <h2>Hover Animations</h2>
       <div class="section-display">
         <div class="button_container">
           <p>Grow and Shrink V1</p>
@@ -10,6 +11,10 @@
         <div class="button_container">
           <p>Shake V1</p>
           <BtnShakeV1 @click="clicked('ShakeV1.vue')" />
+        </div>
+        <div class="button_container">
+          <p>Erase Right</p>
+          <BtnEraseRight @click="clicked('EraseRight.vue')" />
         </div>
       </div>
     </div>

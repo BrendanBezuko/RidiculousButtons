@@ -24,9 +24,15 @@ const text = ref(props.text);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   position: relative;
 
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
   &:hover {
     color: $light_text;
-    background-color: $dark_background;
+    background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
 }
