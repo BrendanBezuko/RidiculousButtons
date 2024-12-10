@@ -2,17 +2,17 @@
 
 # Ridiculous Buttons
 
-A collection of nuxt compatible buttons. Why? because why not. This project is going to move slow, but I'll try and add a new button per day and improve as i go. My goal is to learn more about css and SASS in a public repo and maybe provide someone with a free button or two for their website.
+A collection of Nuxt-compatible buttons. This project will move slowly, but I'll try to add a new button per day and improve as I go. I aim to learn more about CSS and SASS in a public repo and hopefully provide someone with a free button or two for their website.
 
 ## Features
 
-- **Light and dark mode**: Every button will be compatible with color-mode nuxt module.
-- **Every Button will exists as a SFC**: A beautiful about vue is the components can exist as a single file. Every button can easily be used by simply copying the SFC (clicking the button). N.b. though these buttons are SFCs, I'm not going to garauntee vue compatibility (Nuxt is recommended)).
-- **Easily copy the SFCs**: The built inp reprocessor parses the SFCs and allows you to simply run the development server, pick a button, press it, and the entre SFC including HTML, SCSS, and javascipt will be in your keyboard ready to go.
+- **Light and dark mode**: Every button will be compatible with color-mode Nuxt module.
+- **Every Button will exist as a SFC**: A beautiful about vue is the components can exist as a single file. Every button can easily be used by simply copying the SFC (clicking the button). N.b. Though these buttons are SFCs, I'm not going to guarantee vue compatibility (Nuxt is recommended)).
+- **Easily copy the SFCs**: The built-in reprocessor parses the SFCs and allows you to simply run the development server, pick a button, press it, and the entire SFC including HTML, SCSS, and javascript will be in your keyboard ready to go.
 
 ## Philosophy
 
-I'm not a professional designer, but I do believe everyone should participate in designs because it keeps things interesting with different perspectives. Design work is actually quite difficult and takes time to refine and get good designs, so expect these buttons to under go a lot of refining as I develop this repo with better more naunced desgin, features, and animations.
+I'm not a professional designer, but I do believe everyone should participate in designs because it keeps things interesting with different perspectives. Design work is quite difficult and takes time to refine and get good designs, so expect these buttons to undergo a lot of refining as I develop this repo with better more nuanced design, features, and animations.
 
 # Nuxt Minimal Starter
 
