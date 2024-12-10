@@ -12,6 +12,7 @@ const text = ref(props.text);
 
 <style lang="scss" scoped>
 .btn {
+  display: inline-block;
   color: $dark_text;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0);

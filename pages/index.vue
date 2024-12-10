@@ -1,8 +1,6 @@
 <template>
   <div class="page">
-    <NuxtLink class="link" to="/buttons">
-      <BtnGrowAndShrinkV1 :text="'Start Now'" />
-    </NuxtLink>
+    <HomeButton />
   </div>
 </template>
 
@@ -11,9 +9,5 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.link {
-  text-decoration: none;
 }
 </style>

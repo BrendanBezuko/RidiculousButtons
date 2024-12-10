@@ -2,13 +2,13 @@
 
 # Ridiculous Buttons
 
-A collection of Nuxt-compatible buttons. This project will move slowly, but I'll try to add a new button per day and improve as I go. I aim to learn more about CSS and SASS in a public repo and hopefully provide someone with a free button or two for their website.
+A collection of buttons compatible with the Nuxt framework. This project is a work in progress. I aim to add a large collection of unique and animated buttons free for use with attribution and link to this repo somewhere on the document.
 
 ## Features
 
 - **Light and dark mode**: Every button will be compatible with color-mode Nuxt module.
 - **Every Button will exist as a SFC**: A beautiful about vue is the components can exist as a single file. Every button can easily be used by simply copying the SFC (clicking the button). N.b. Though these buttons are SFCs, I'm not going to guarantee vue compatibility (Nuxt is recommended)).
-- **Easily copy the SFCs**: The built-in reprocessor parses the SFCs and allows you to simply run the development server, pick a button, press it, and the entire SFC including HTML, SCSS, and javascript will be in your keyboard ready to go.
+- **Easily copy the SFCs**: The built-in preprocessor parses the SFCs and allows you to run the development server, pick a button, press it, and the entire SFC including HTML, SASS, and javascript will be in your clipboard ready to go.
 
 ## Philosophy
 

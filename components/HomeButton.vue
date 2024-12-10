@@ -1,6 +1,6 @@
 <template>
   <div class="btn-container">
-    <div class="btn">{{ text || "Click" }}</div>
+    <NuxtLink to="/buttons" class="btn">{{ text || "Click" }}</NuxtLink>
   </div>
 </template>
 
@@ -12,9 +12,8 @@ const text = ref(props.text);
 
 <style lang="scss" scoped>
 .btn {
-  display: inline-block;
-
   color: $dark_text;
+  display: inline-block;
   text-decoration: none;
   background-color: $primary;
   padding: 1rem;
