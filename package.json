@@ -13,11 +13,11 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "fs": "^0.0.1-security",
     "nuxt": "^3.14.1592",
-    "sass-loader": "^10.5.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "sass": "^1.82.0"
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4"
   }
 }
