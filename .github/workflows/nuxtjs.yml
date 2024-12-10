@@ -51,8 +51,11 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: List files (debug)
-        run: ls -al ./assets
+      - name: Debug SCSS files
+        run: |
+          echo "Checking SCSS files..."
+          ls -al ./assets/scss
+          cat ./assets/scss/_colors.scss
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -72,6 +75,11 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Print SCSS preprocessor config
+        run: |
+          echo "SCSS additional data:"
+          echo '@import "~/assets/scss/_colors.scss";' > temp.scss
+          cat temp.scss
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate --verbose
       - name: Upload artifact
