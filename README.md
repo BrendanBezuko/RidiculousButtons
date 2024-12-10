@@ -7,7 +7,7 @@ A collection of nuxt compatible buttons. Why? because why not. This project is g
 ## Features
 
 - **Light and dark mode**: Every button will be compatible with color-mode nuxt module.
-- **Every Button will exists as a SFC**: Every button should be easily usable by simply copying the SFC. A beautiful thing about vue in general (though I'm not going to bother with vue wihtout ~~Nuxt~~ compatibility).
+- **Every Button will exists as a SFC**: A beautiful about vue is the components can exist as a single file. Every button can easily be used by simply copying the SFC (clicking the button). N.b. though these buttons are SFCs, I'm not going to garauntee vue compatibility (Nuxt is recommended)).
 - **Easily copy the SFCs**: The built inp reprocessor parses the SFCs and allows you to simply run the development server, pick a button, press it, and the entre SFC including HTML, SCSS, and javascipt will be in your keyboard ready to go.
 
 ## Philosophy
