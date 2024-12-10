@@ -4,7 +4,11 @@ import { processSFCs } from "./processSFC.js"; // Import your preprocessor
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  css: ["~/assets/scss/main.scss", "~/assets/_fonts.scss"],
+  css: [
+    "~/assets/scss/main.scss",
+    "~/assets/_fonts.scss",
+    "~/asseets/_colors.scss",
+  ],
 
   vite: {
     plugins: [
