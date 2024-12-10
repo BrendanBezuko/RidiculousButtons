@@ -2,7 +2,11 @@
 
 # Ridiculous Buttons
 
-A collection of buttons compatible with the Nuxt framework. This project is a work in progress. I aim to add a large collection of unique and animated buttons free for use with attribution and link to this repo somewhere on the webpage or document (can be tiny note in footer).
+A collection of buttons compatible with the Nuxt framework. This project is a work in progress. I aim to add a large collection of unique and animated buttons free for use with attribution and link to this repo somewhere on the webpage.
+
+Run locally or vist https://brendanbezuko.github.io/RidiculousButtons/
+
+**Please note** to run locally you need to edit the config file and remove the baseURL setting.
 
 ## Features
 

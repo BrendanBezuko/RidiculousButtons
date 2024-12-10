@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ["~/assets/scss/main.scss"],
   ssr: true,
   app: {
-    baseURL: "/RidiculousButtons/", // Replace 'repository-name' with your GitHub repo name
+    baseURL: "/RidiculousButtons/",
   },
   vite: {
     plugins: [
