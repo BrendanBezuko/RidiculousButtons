@@ -13,40 +13,42 @@ const text = ref(props.text);
 <style lang="scss" scoped>
 .btn {
   display: inline-block;
-
   color: $dark_text;
   text-decoration: none;
-  background-color: $primary;
+  background-color: rgba(0, 0, 0, 0);
   padding: 1rem;
   width: fit-content;
   text-align: center;
-  border-radius: 0.2rem;
+  border-radius: 2rem;
+  border: $primary 5px solid;
+  box-shadow: inset 0 0 0 3px #ffffff;
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
 
   &:hover {
-    animation: growNShrink 2s linear;
+    color: $light_text;
+    background-color: $primary;
     cursor: pointer;
   }
 }
 
-.btn-container {
-  margin: 4rem;
-}
+.dark-mode {
+  .btn {
+    color: $light_text;
 
-@keyframes growNShrink {
-  0% {
-    transform: scale(0.8);
-    background-color: $primary;
-  }
-  50% {
-    transform: scale(1.4);
-    background-color: $secondary;
-  }
-  100% {
-    transform: scale(1);
-    background-color: $primary;
+    &:hover {
+      color: $dark_text;
+      background-color: $primary;
+      cursor: pointer;
+    }
   }
 }
 </style>

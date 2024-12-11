@@ -1,16 +1,17 @@
 <template>
   <div class="page">
+    <p>Just click to copy the SFC and use in your own code</p>
     <div class="section">
-      <p>Just click to copy the SFC and use in your own code</p>
       <h2>Hover Animations</h2>
+      <p>Note: these work best on laptops and desktops.</p>
       <div class="section-display">
         <div class="button_container">
           <p>Grow and Shrink V1</p>
-          <BtnGrowAndShrinkV1 @click="clicked('GrowAndShrinkV1.vue')" />
+          <BtnGrowAndShrink @click="clicked('GrowAndShrinkV1.vue')" />
         </div>
         <div class="button_container">
           <p>Shake V1</p>
-          <BtnShakeV1 @click="clicked('ShakeV1.vue')" />
+          <BtnShake @click="clicked('ShakeV1.vue')" />
         </div>
         <div class="button_container">
           <p>Erase Right</p>
@@ -23,7 +24,7 @@
       <div class="section-display">
         <div class="button_container">
           <p>Border Box V1</p>
-          <BtnBorderBoxV1 @click="clicked('BorderBoxV1.vue')" />
+          <BtnBorderBox @click="clicked('BorderBoxV1.vue')" />
         </div>
       </div>
     </div>
@@ -34,16 +35,12 @@
 import sfcContent from "./public/sfc-content.js";
 
 function getSFCContent(fileName) {
-  console.log("Input fileName:", fileName);
-  console.log("sfcContent:", sfcContent);
-
   const sfc = sfcContent.find((item) => item.fileName === fileName);
   if (!sfc) {
     console.error(`File ${fileName} not found.`);
     return null;
   }
 
-  console.log("Found SFC:", sfc);
   return sfc.content;
 }
 
@@ -65,5 +62,22 @@ function clicked(fileName) {
 .section-display {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 </style>

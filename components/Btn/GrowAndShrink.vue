@@ -26,7 +26,7 @@ const text = ref(props.text);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
 
   &:hover {
-    animation: shake 2s linear;
+    animation: growNShrink 1s linear;
     cursor: pointer;
   }
 }
@@ -35,23 +35,17 @@ const text = ref(props.text);
   margin: 4rem;
 }
 
-@keyframes shake {
+@keyframes growNShrink {
   0% {
-    transform: rotate(30deg) scale(1);
+    transform: scale(0.9);
     background-color: $primary;
   }
-  25% {
-    transform: rotate(-30deg) scale(1.1);
+  50% {
+    transform: scale(1.2);
     background-color: $secondary;
   }
-  50% {
-    transform: rotate(30deg) scale(0.9);
-  }
-  75% {
-    transform: rotate(-30deg) scale(1.1);
-  }
   100% {
-    transform: rotate(0deg) scale(1);
+    transform: scale(1);
     background-color: $primary;
   }
 }

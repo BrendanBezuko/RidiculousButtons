@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <HomeButton />
+    <HomeButton :text="'Click to Browse'" />
   </div>
 </template>
 

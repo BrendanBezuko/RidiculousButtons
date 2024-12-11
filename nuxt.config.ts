@@ -29,5 +29,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/color-mode", "@nuxt/icon"],
 });

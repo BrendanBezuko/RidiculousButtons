@@ -58,6 +58,24 @@ const text = ref(props.text);
   margin: 4rem;
 }
 
+.dark-mode {
+  .btn {
+    &:hover {
+      animation: fadeColor 0.5s linear;
+      color: $light_text;
+    }
+  }
+}
+
+@keyframes fadeColor {
+  from {
+    color: $dark_text;
+  }
+  to {
+    color: $light_text;
+  }
+}
+
 @keyframes eraseRight {
   from {
     transform: translateX(0);
