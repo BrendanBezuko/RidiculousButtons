@@ -7,11 +7,11 @@
       <div class="section-display">
         <div class="button_container">
           <p>Grow and Shrink V1</p>
-          <BtnGrowAndShrink @click="clicked('GrowAndShrinkV1.vue')" />
+          <BtnGrowAndShrink @click="clicked('GrowAndShrink.vue')" />
         </div>
         <div class="button_container">
           <p>Shake V1</p>
-          <BtnShake @click="clicked('ShakeV1.vue')" />
+          <BtnShake @click="clicked('Shake.vue')" />
         </div>
         <div class="button_container">
           <p>Erase Right</p>
@@ -24,7 +24,7 @@
       <div class="section-display">
         <div class="button_container">
           <p>Border Box V1</p>
-          <BtnBorderBox @click="clicked('BorderBoxV1.vue')" />
+          <BtnBorderBox @click="clicked('BorderBox.vue')" />
         </div>
       </div>
     </div>
