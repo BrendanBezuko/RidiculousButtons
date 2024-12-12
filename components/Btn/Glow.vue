@@ -18,28 +18,22 @@ const text = ref(props.text);
   width: fit-content;
   text-align: center;
   border-radius: 1rem;
-  -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
-  box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
 
   &:hover {
-    animation: growNShrink 1s linear;
+    animation: glow 2s infinite;
     cursor: pointer;
   }
 }
 
-@keyframes growNShrink {
+@keyframes glow {
   0% {
-    transform: scale(0.9);
-    background-color: $primary;
+    box-shadow: 0 0 10px 5px $primary;
   }
   50% {
-    transform: scale(1.2);
-    background-color: $secondary;
+    box-shadow: 0 0 20px 10px $secondary;
   }
   100% {
-    transform: scale(1);
-    background-color: $primary;
+    box-shadow: 0 0 10px 5px $primary;
   }
 }
 </style>

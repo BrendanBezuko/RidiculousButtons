@@ -1,7 +1,5 @@
 <template>
-  <div class="btn-container">
-    <div role="button" class="btn">{{ text || "Click" }}</div>
-  </div>
+  <div role="button" class="btn">{{ text || "Click" }}</div>
 </template>
 
 <script setup>
@@ -13,7 +11,6 @@ const text = ref(props.text);
 <style lang="scss" scoped>
 .btn {
   display: inline-block;
-
   color: $dark_text;
   text-decoration: none;
   background-color: $primary;
@@ -29,10 +26,6 @@ const text = ref(props.text);
     cursor: pointer;
     animation: pulse 1.3s linear;
   }
-}
-
-.btn-container {
-  margin: 4rem;
 }
 
 @keyframes pulse {

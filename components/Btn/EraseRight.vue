@@ -1,7 +1,5 @@
 <template>
-  <div class="btn-container">
-    <div role="button" class="btn">{{ text || "Click" }}</div>
-  </div>
+  <div role="button" class="btn">{{ text || "Click" }}</div>
 </template>
 
 <script setup>
@@ -52,10 +50,6 @@ const text = ref(props.text);
   &:hover::after {
     animation: eraseRight 1s forwards;
   }
-}
-
-.btn-container {
-  margin: 4rem;
 }
 
 .dark-mode {

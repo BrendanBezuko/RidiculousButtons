@@ -5,28 +5,32 @@
       <h2>Hover Animations</h2>
       <p>Note: these work best on laptops and desktops.</p>
       <div class="section-display">
-        <div class="button_container">
+        <div class="btn-container">
           <p>Pulse</p>
           <BtnPulse @click="clicked('Pulse.vue')" />
         </div>
-        <div class="button_container">
+        <div class="btn-container">
           <p>Shake</p>
           <BtnShake @click="clicked('Shake.vue')" />
         </div>
-        <div class="button_container">
+        <div class="btn-container">
           <p>Erase Right</p>
           <BtnEraseRight @click="clicked('EraseRight.vue')" />
         </div>
-        <div class="button_container">
+        <div class="btn-container">
           <p>Fill</p>
           <BtnFill @click="clicked('Fill.vue')" />
+        </div>
+        <div class="btn-container">
+          <p>Glow</p>
+          <BtnGlow @click="clicked('Glow.vue')" />
         </div>
       </div>
     </div>
     <div class="section">
       <h2>Shapes</h2>
       <div class="section-display">
-        <div class="button_container">
+        <div class="btn-container">
           <p>Parallelogram</p>
           <BtnParallelogram @click="clicked('Parallelogram.vue')" />
         </div>
@@ -67,6 +71,7 @@ function clicked(fileName) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .page {
@@ -83,5 +88,9 @@ function clicked(fileName) {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.btn-container {
+  margin: 3rem;
 }
 </style>

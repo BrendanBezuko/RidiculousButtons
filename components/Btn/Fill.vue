@@ -1,7 +1,5 @@
 <template>
-  <div class="btn-container">
-    <div role="button" class="btn">{{ text || "Click" }}</div>
-  </div>
+  <div role="button" class="btn">{{ text || "Click" }}</div>
 </template>
 
 <script setup>
