@@ -58,7 +58,12 @@ function clicked(fileName) {
   if (sfc) {
     navigator.clipboard
       .writeText(sfc)
-      .then(() => alert("SFC content copied to clipboard!"))
+      .then(() => {
+        if (navigator.vibrate) {
+          navigator.vibrate(200);
+        }
+        alert("SFC content copied to clipboard!");
+      })
       .catch((err) => console.error("Failed to copy:", err));
   } else {
     alert("No content to copy!");
