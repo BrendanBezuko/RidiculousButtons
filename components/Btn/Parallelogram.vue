@@ -1,8 +1,6 @@
 <template>
   <div class="btn-container">
-    <NuxtLink to="/buttons" role="button" class="btn">{{
-      text || "Click"
-    }}</NuxtLink>
+    <div role="button" class="btn">{{ text || "Click" }}</div>
   </div>
 </template>
 

@@ -6,25 +6,29 @@
       <p>Note: these work best on laptops and desktops.</p>
       <div class="section-display">
         <div class="button_container">
-          <p>Grow and Shrink V1</p>
-          <BtnGrowAndShrink @click="clicked('GrowAndShrink.vue')" />
+          <p>Pulse</p>
+          <BtnPulse @click="clicked('Pulse.vue')" />
         </div>
         <div class="button_container">
-          <p>Shake V1</p>
+          <p>Shake</p>
           <BtnShake @click="clicked('Shake.vue')" />
         </div>
         <div class="button_container">
           <p>Erase Right</p>
           <BtnEraseRight @click="clicked('EraseRight.vue')" />
         </div>
+        <div class="button_container">
+          <p>Fill</p>
+          <BtnFill @click="clicked('Fill.vue')" />
+        </div>
       </div>
     </div>
     <div class="section">
-      <h2>Styles</h2>
+      <h2>Shapes</h2>
       <div class="section-display">
         <div class="button_container">
-          <p>Border Box V1</p>
-          <BtnBorderBox @click="clicked('BorderBox.vue')" />
+          <p>Parallelogram</p>
+          <BtnParallelogram @click="clicked('Parallelogram.vue')" />
         </div>
       </div>
     </div>

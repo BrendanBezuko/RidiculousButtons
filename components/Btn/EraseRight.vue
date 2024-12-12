@@ -1,6 +1,6 @@
 <template>
   <div class="btn-container">
-    <div class="btn">{{ text || "Click" }}</div>
+    <div role="button" class="btn">{{ text || "Click" }}</div>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ const text = ref(props.text);
   width: fit-content;
   height: auto;
   text-align: center;
-  border-radius: 0.2rem;
+  border-radius: 1rem;
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
