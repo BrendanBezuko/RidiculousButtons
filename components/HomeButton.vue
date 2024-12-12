@@ -1,15 +1,35 @@
 <template>
   <div class="btn-container">
-    <NuxtLink to="/buttons" role="button" class="btn">{{
-      text || "Click"
-    }}</NuxtLink>
+    <div
+      :class="['btn', { 'spin-btn': isSpinning }, { 'pulse-btn': !isSpinning }]"
+      role="button"
+      @click="handleClick"
+    >
+      {{ text || "Click" }}
+    </div>
   </div>
 </template>
 
 <script setup>
-const props = defineProps(["text"]);
+import { navigateTo } from "#app";
 
-const text = ref(props.text);
+const props = defineProps({
+  text: String,
+});
+
+const isSpinning = ref(false);
+
+async function handleClick() {
+  if (isSpinning.value) return;
+
+  isSpinning.value = true;
+  await nextTick();
+
+  setTimeout(() => {
+    navigateTo("/buttons");
+    isSpinning.value = false;
+  }, 1200);
+}
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +49,6 @@ const text = ref(props.text);
 
   &:hover {
     cursor: pointer;
-    animation: pulse 1s linear;
   }
 }
 
@@ -37,15 +56,35 @@ const text = ref(props.text);
   margin: 4rem;
 }
 
+.spin-btn {
+  animation: rotation 1s cubic-bezier(0.66, 0.385, 0.82, 0.085);
+}
+
+.pulse-btn {
+  &:hover {
+    cursor: pointer;
+    animation: pulse 0.4s linear;
+  }
+}
+
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    transform: scale(1) scaleX(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05) scaleX(1.2);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) scaleX(1);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
   }
 }
 </style>

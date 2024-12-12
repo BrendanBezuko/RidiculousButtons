@@ -27,7 +27,7 @@ const text = ref(props.text);
 
   &:hover {
     cursor: pointer;
-    animation: pulse 1s linear;
+    animation: pulse 1.3s linear;
   }
 }
 
@@ -37,13 +37,13 @@ const text = ref(props.text);
 
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    transform: scale(1) scaleX(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05) scaleX(1.2);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) scaleX(1);
   }
 }
 </style>
