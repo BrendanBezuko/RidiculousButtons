@@ -7,23 +7,27 @@
       <div class="section-display">
         <div class="btn-container">
           <p>Pulse</p>
-          <BtnPulse @click="clicked('Pulse.vue')" />
+          <BtnPulse @click="copySFCToClipBoard('Pulse.vue')" />
         </div>
         <div class="btn-container">
           <p>Shake</p>
-          <BtnShake @click="clicked('Shake.vue')" />
+          <BtnShake @click="copySFCToClipBoard('Shake.vue')" />
         </div>
         <div class="btn-container">
           <p>Erase Right</p>
-          <BtnEraseRight @click="clicked('EraseRight.vue')" />
+          <BtnEraseRight @click="copySFCToClipBoard('EraseRight.vue')" />
         </div>
         <div class="btn-container">
           <p>Fill</p>
-          <BtnFill @click="clicked('Fill.vue')" />
+          <BtnFill @click="copySFCToClipBoard('Fill.vue')" />
         </div>
         <div class="btn-container">
           <p>Glow</p>
-          <BtnGlow @click="clicked('Glow.vue')" />
+          <BtnGlow @click="copySFCToClipBoard('Glow.vue')" />
+        </div>
+        <div class="btn-container">
+          <p>Gradient</p>
+          <BtnGradient @click="copySFCToClipBoard('Gradient.vue')" />
         </div>
       </div>
     </div>
@@ -32,7 +36,22 @@
       <div class="section-display">
         <div class="btn-container">
           <p>Parallelogram</p>
-          <BtnParallelogram @click="clicked('Parallelogram.vue')" />
+          <BtnParallelogram @click="copySFCToClipBoard('Parallelogram.vue')" />
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Post Click Animations</h2>
+      <p>
+        Note: these pruposefully introduce a delay, but work nicely on mobile
+        devices aswell
+      </p>
+      <div class="section-display">
+        <div class="btn-container">
+          <p>Spinning</p>
+          <BtnSpinning
+            :click-handler="() => copySFCToClipBoard('Spinning.vue')"
+          />
         </div>
       </div>
     </div>
@@ -52,7 +71,8 @@ function getSFCContent(fileName) {
   return sfc.content;
 }
 
-function clicked(fileName) {
+function copySFCToClipBoard(fileName) {
+  console.log("invoked clicked function");
   let sfc = getSFCContent(fileName);
 
   if (sfc) {
