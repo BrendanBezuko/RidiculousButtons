@@ -5,27 +5,45 @@
     <NuxtLink class="nav-link" to="/buttons">Buttons</NuxtLink>
   </div>
   <div class="colormode-container">
-    <ClientOnly>
-      <Icon
-        v-if="colorMode.value === 'light'"
-        @click="colorMode.preference = 'dark'"
-        name="iconamoon:mode-dark-light"
-        size="2rem"
-        color="black"
-      />
-      <Icon
-        v-else
-        @click="colorMode.preference = 'light'"
-        name="tdesign:mode-light"
-        size="2rem"
-        color="white"
-      />
-    </ClientOnly>
+    <Icon
+      v-if="isMounted"
+      @click="toggleColorMode"
+      :name="currentIcon.name"
+      size="2rem"
+      :color="currentIcon.color"
+    />
   </div>
 </template>
 
 <script setup>
 const colorMode = useColorMode();
+const isMounted = ref(false);
+
+const IconStyle = {
+  light: {
+    name: "tdesign:mode-light",
+    color: "white",
+  },
+  dark: {
+    name: "iconamoon:mode-dark-light",
+    color: "black",
+  },
+};
+
+// Computed property for dynamic icon data
+const currentIcon = computed(() => {
+  return colorMode.value === "light" ? IconStyle.dark : IconStyle.light;
+});
+
+// Toggle color mode
+const toggleColorMode = () => {
+  colorMode.preference = colorMode.value === "light" ? "dark" : "light";
+};
+
+// Ensure component logic runs after mount
+onMounted(() => {
+  isMounted.value = true;
+});
 </script>
 
 <style lang="scss" scoped>
