@@ -60,6 +60,10 @@
       <div class="section-display">
         <div class="btn-container">
           <p>Video</p>
+          <p class="credit">
+            Video by Jithin Mathew:
+            https://www.pexels.com/video/aerial-drone-beach-waves-on-california-coast-29828942/
+          </p>
           <BtnVideo :click-handler="() => copySFCToClipBoard('Video.vue')" />
         </div>
       </div>
@@ -126,5 +130,14 @@ function copySFCToClipBoard(fileName) {
 
 .btn-container {
   margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit {
+  font-size: xx-small;
+  max-width: 20vw;
 }
 </style>
