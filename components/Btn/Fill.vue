@@ -33,6 +33,7 @@ const text = ref(props.text);
 
   &:hover {
     background-color: $primary;
+    color: $light_text;
     cursor: pointer;
   }
 }

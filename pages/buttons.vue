@@ -55,6 +55,15 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <h2>Multi Media</h2>
+      <div class="section-display">
+        <div class="btn-container">
+          <p>Video</p>
+          <BtnVideo :click-handler="() => copySFCToClipBoard('Video.vue')" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
