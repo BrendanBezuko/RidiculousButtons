@@ -64,7 +64,7 @@
             Video by Jithin Mathew:
             https://www.pexels.com/video/aerial-drone-beach-waves-on-california-coast-29828942/
           </p>
-          <BtnVideo :click-handler="() => copySFCToClipBoard('Video.vue')" />
+          <BtnVideo @click="copySFCToClipBoard('Video.vue')" />
         </div>
       </div>
     </div>

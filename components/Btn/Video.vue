@@ -38,12 +38,8 @@ const text = ref(props.text);
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0)
-  );
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px white, 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.2);
   padding: 0.5rem;
   border-radius: 1rem;
 }
