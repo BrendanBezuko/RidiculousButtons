@@ -74,6 +74,9 @@
 <script setup>
 import sfcContent from "./public/sfc-content.js";
 
+import { useNotificationStore } from "~/stores/notification.js";
+const notificationStore = useNotificationStore();
+
 function getSFCContent(fileName) {
   const sfc = sfcContent.find((item) => item.fileName === fileName);
   if (!sfc) {
@@ -95,7 +98,7 @@ function copySFCToClipBoard(fileName) {
         if (navigator.vibrate) {
           navigator.vibrate(200);
         }
-        alert("SFC content copied to clipboard!");
+        notificationStore.notify("The SFC 📋copied📋", "Notification");
       })
       .catch((err) => console.error("Failed to copy:", err));
   } else {
@@ -104,7 +107,7 @@ function copySFCToClipBoard(fileName) {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .section-display {
   display: flex;
   flex-direction: row;

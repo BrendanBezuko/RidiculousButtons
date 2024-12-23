@@ -12,8 +12,10 @@
   "dependencies": {
     "@nuxt/icon": "^1.10.1",
     "@nuxtjs/color-mode": "^3.5.2",
+    "@pinia/nuxt": "^0.9.0",
     "fs": "^0.0.1-security",
     "nuxt": "^3.14.1592",
+    "pinia": "^2.3.0",
     "vue": "latest",
     "vue-router": "latest"
   },

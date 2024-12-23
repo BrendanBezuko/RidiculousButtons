@@ -3,8 +3,17 @@
     <Header></Header>
     <NavBar></NavBar>
     <slot></slot>
+    <Notification v-if="showNotification" />
   </div>
 </template>
+
+<script setup>
+import { useNotificationStore } from "~/stores/notification";
+import { storeToRefs } from "pinia";
+
+const notificationStore = useNotificationStore();
+const { showNotification } = storeToRefs(notificationStore);
+</script>
 
 <style lang="scss">
 .page {

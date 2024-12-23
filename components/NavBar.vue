@@ -64,6 +64,10 @@ onMounted(() => {
 }
 
 .colormode-container {
-  padding: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
