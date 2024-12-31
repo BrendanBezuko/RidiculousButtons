@@ -60,11 +60,15 @@
       <div class="section-display">
         <div class="btn-container">
           <p>Video</p>
+          <BtnVideo @click="copySFCToClipBoard('Video.vue')" />
           <p class="credit">
             Video by Jithin Mathew:
             https://www.pexels.com/video/aerial-drone-beach-waves-on-california-coast-29828942/
           </p>
-          <BtnVideo @click="copySFCToClipBoard('Video.vue')" />
+        </div>
+        <div class="btn-container">
+          <p>Image</p>
+          <BtnImage @click="copySFCToClipBoard('Image.vue')" />
         </div>
       </div>
     </div>
@@ -113,6 +117,7 @@ function copySFCToClipBoard(fileName) {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .page {

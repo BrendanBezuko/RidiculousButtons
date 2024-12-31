@@ -1,8 +1,6 @@
 <template>
   <div role="button" class="btn">
-    <div class="btn-text">
-      {{ text || "Click" }}
-    </div>
+    <span>{{ text || "Click" }}</span>
   </div>
 </template>
 
@@ -21,31 +19,51 @@ const text = ref(props.text);
   width: fit-content;
   text-align: center;
   border-radius: 1rem;
+  padding: 1rem 4rem;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0), $secondary),
+    url("/mountains.webp");
+  background-size: cover;
   position: relative;
+  box-shadow: inset 0 0 0 3px #ffffff;
+  -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+
+  &::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
 
   &:hover {
-    animation: glow 2s infinite;
     cursor: pointer;
+
+    &::before {
+      animation: grow 2s linear;
+    }
   }
 }
 
-.btn-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  text-shadow: 0 0 5px white, 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 10px rgba(255, 255, 255, 0.2);
-  padding: 0.5rem;
-  border-radius: 1rem;
-}
-
-.btn-video {
-  display: block;
-
-  max-width: 6rem;
-  max-height: 6rem;
-  border-radius: 1rem;
+@keyframes grow {
+  0% {
+    padding: 1rem 3rem;
+  }
+  50% {
+    padding: 1.3rem 4rem;
+  }
+  100% {
+    padding: 1rem 3rem;
+  }
 }
 </style>
