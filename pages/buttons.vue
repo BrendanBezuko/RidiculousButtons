@@ -22,6 +22,10 @@
           <BtnFill @click="copySFCToClipBoard('Fill.vue')" />
         </div>
         <div class="btn-container">
+          <p>Cross Fill</p>
+          <BtnCrossFill @click="copySFCToClipBoard('CrossFill.vue')" />
+        </div>
+        <div class="btn-container">
           <p>Glow</p>
           <BtnGlow @click="copySFCToClipBoard('Glow.vue')" />
         </div>
