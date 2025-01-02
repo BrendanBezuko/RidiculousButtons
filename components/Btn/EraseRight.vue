@@ -32,6 +32,8 @@ const text = ref(props.text);
     -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0);
     -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0);
     box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0);
+    border-radius: 0;
+    animation: borderRadius 0.5s linear;
   }
 
   // Pseudo-element
@@ -61,12 +63,23 @@ const text = ref(props.text);
   }
 }
 
+@keyframes borderRadius {
+  from {
+    border-radius: 1rem;
+  }
+  to {
+    border-radius: 0;
+  }
+}
+
 @keyframes fadeColor {
   from {
     color: $dark_text;
+    border-radius: 1rem;
   }
   to {
     color: $light_text;
+    border-radius: 0;
   }
 }
 

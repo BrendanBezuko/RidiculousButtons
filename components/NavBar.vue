@@ -1,11 +1,12 @@
 <template>
   <div class="nav-container">
-    <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-    <NuxtLink class="nav-link" to="/about">About</NuxtLink>
-    <NuxtLink class="nav-link" to="/buttons">Buttons</NuxtLink>
-  </div>
-  <div class="colormode-container">
+    <div class="links-container">
+      <NuxtLink class="nav-link" to="/">Home</NuxtLink>
+      <NuxtLink class="nav-link" to="/about">About</NuxtLink>
+      <NuxtLink class="nav-link" to="/buttons">Buttons</NuxtLink>
+    </div>
     <Icon
+      class="icon"
       v-if="isMounted"
       @click="toggleColorMode"
       :name="currentIcon.name"
@@ -48,11 +49,26 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .nav-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: $begie;
+  z-index: 9999;
+}
+
+.dark-mode .nav-container {
+  background-color: $grey;
+}
+
+.links-container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .nav-link {
@@ -63,11 +79,7 @@ onMounted(() => {
   }
 }
 
-.colormode-container {
-  padding: 1rem 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icon {
+  margin: 0 1rem;
 }
 </style>

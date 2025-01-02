@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 
 export function processSFCs() {
-  const inputDir = "./components/Btn"; // Path to your Vue components
-  const outputFile = "./public/sfc-content.js"; // Output file path
+  const inputDir = "./components/Btn";
+  const outputFile = "./public/sfc-content.js";
 
   const sfcFiles = fs
     .readdirSync(inputDir)
