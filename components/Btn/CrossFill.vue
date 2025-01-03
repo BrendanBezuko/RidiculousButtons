@@ -38,7 +38,7 @@ const text = ref(props.text);
     padding: 3rem 4rem;
     z-index: -1;
     border-radius: 4rem;
-    transform: translate(100%, 100%);
+    transform: translate(90%, 90%);
     pointer-events: none;
   }
 
@@ -48,6 +48,7 @@ const text = ref(props.text);
       transform: translate(25%, 10%);
     }
     color: $light_text;
+    cursor: pointer;
   }
 }
 
@@ -61,7 +62,7 @@ const text = ref(props.text);
 
 @keyframes crossFill {
   from {
-    transform: translate(100%, 100%);
+    transform: translate(90%, 90%);
   }
   to {
     transform: translate(25%, 10%);

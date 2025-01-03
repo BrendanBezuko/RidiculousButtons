@@ -43,7 +43,7 @@ const text = ref(props.text);
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.1) rotate(30deg);
+    transform: scale(1.5) rotate(30deg);
   }
 }
 </style>

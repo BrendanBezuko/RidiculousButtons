@@ -46,6 +46,10 @@
           <p>Blob</p>
           <BtnBlob @click="copySFCToClipBoard('Blob.vue')" />
         </div>
+        <div class="btn-container">
+          <p>Arrow</p>
+          <BtnArrow @click="copySFCToClipBoard('Arrow.vue')" />
+        </div>
       </div>
     </div>
     <div class="section">

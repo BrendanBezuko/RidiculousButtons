@@ -40,6 +40,7 @@ async function handleClick() {
   text-decoration: none;
   background-color: $primary;
   padding: 1rem 5rem;
+  margin: 3rem;
   width: fit-content;
   text-align: center;
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);

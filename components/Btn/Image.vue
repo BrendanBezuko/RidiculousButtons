@@ -50,7 +50,7 @@ const text = ref(props.text);
     cursor: pointer;
 
     &::before {
-      animation: grow 2s linear;
+      animation: grow 0.5s linear;
     }
   }
 }
@@ -60,7 +60,7 @@ const text = ref(props.text);
     padding: 1rem 3rem;
   }
   50% {
-    padding: 1.3rem 4rem;
+    padding: 1.1rem 3.2rem;
   }
   100% {
     padding: 1rem 3rem;
