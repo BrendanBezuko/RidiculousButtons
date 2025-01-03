@@ -20,6 +20,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@iconify-json/iconamoon": "^1.2.2",
+    "@iconify-json/tdesign": "^1.2.6",
     "sass": "^1.82.0",
     "sass-loader": "^16.0.4"
   }
