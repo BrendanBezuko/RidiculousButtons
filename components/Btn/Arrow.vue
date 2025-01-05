@@ -27,9 +27,8 @@ const text = ref(props.text);
   &:hover {
     cursor: pointer;
     animation: narrow 1.3s ease-in;
-    clip-path: polygon(33% 0, 100% 50%, 32% 100%, 0 100%, 0 0);
-
-    transform: translate(30%, 0%);
+    clip-path: polygon(33% 0, 100% 50%, 32% 100%, 33% 100%, 33% 0);
+    transform: translate(10%, 0%);
   }
 }
 
@@ -38,13 +37,13 @@ const text = ref(props.text);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 100%, 0 0);
     transform: translate(0%, 0%);
   }
-  70% {
+  100% {
     transform: translate(0%, 0%);
     clip-path: polygon(33% 0, 100% 50%, 32% 100%, 33% 100%, 33% 0);
   }
   100% {
-    clip-path: polygon(33% 0, 100% 50%, 32% 100%, 0 100%, 0 0);
-    transform: translate(30%, 0%);
+    clip-path: polygon(33% 0, 100% 50%, 32% 100%, 33% 100%, 33% 0);
+    transform: translate(10%, 0%);
   }
 }
 </style>
