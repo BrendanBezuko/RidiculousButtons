@@ -43,8 +43,8 @@
           <BtnParallelogram @click="copySFCToClipBoard('Parallelogram.vue')" />
         </div>
         <div class="btn-container">
-          <p>Blob</p>
-          <BtnBlob @click="copySFCToClipBoard('Blob.vue')" />
+          <p>SVG</p>
+          <BtnSVG @click="copySFCToClipBoard('SVG.vue')" />
         </div>
         <div class="btn-container">
           <p>Arrow</p>

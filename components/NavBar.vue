@@ -81,5 +81,10 @@ onMounted(() => {
 
 .icon {
   margin: 0 1rem;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 </style>
