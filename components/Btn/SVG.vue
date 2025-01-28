@@ -39,6 +39,8 @@ const text = ref(props.text);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   &:hover {

@@ -28,6 +28,8 @@ const text = ref(props.text);
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -39,19 +41,35 @@ const text = ref(props.text);
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    transition: all 0.3s ease;
   }
 
   span {
     position: relative;
     z-index: 2;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
 
   &:hover {
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 15px 15px 40px -3px rgba(0, 0, 0, 0.6);
 
     &::before {
-      animation: grow 0.5s linear;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 1.1rem 3.2rem;
     }
+
+    span {
+      transform: scale(1.05);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 10px 10px 30px -3px rgba(0, 0, 0, 0.5);
   }
 }
 

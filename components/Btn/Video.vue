@@ -25,10 +25,19 @@ const text = ref(props.text);
   text-align: center;
   border-radius: 1rem;
   position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
 
   &:hover {
-    animation: glow 2s infinite;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: glow 2s infinite;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -38,10 +47,11 @@ const text = ref(props.text);
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
-  text-shadow: 0 0 5px white, 0 0 10px rgba(255, 255, 255, 0.5),
-    0 0 10px rgba(255, 255, 255, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   border-radius: 1rem;
+  transition: transform 0.3s ease;
+  font-weight: 600;
 }
 
 .btn-video {

@@ -21,6 +21,8 @@ const text = ref(props.text);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   clip-path: polygon(25% 0%, 100% 0%, 73% 100%, 0% 100%);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &:hover {
     cursor: pointer;

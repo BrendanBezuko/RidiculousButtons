@@ -28,6 +28,8 @@ const text = ref(props.text);
   z-index: 99;
   pointer-events: all;
   overflow: hidden;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &::before {
     content: "";
@@ -43,12 +45,12 @@ const text = ref(props.text);
   }
 
   &:hover {
+    cursor: pointer;
     &::before {
       animation: crossFill 2s ease-out;
       transform: translate(25%, 10%);
     }
     color: $light_text;
-    cursor: pointer;
   }
 }
 

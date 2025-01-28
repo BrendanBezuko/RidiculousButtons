@@ -18,10 +18,22 @@ const text = ref(props.text);
   width: fit-content;
   text-align: center;
   border-radius: 1rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    animation: glow 2s infinite;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
 

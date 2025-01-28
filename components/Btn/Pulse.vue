@@ -21,25 +21,34 @@ const text = ref(props.text);
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    animation: growNShrink 1s linear;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s ease-in-out infinite;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
 
-@keyframes growNShrink {
+@keyframes pulse {
   0% {
-    transform: scale(0.9);
-    background-color: $primary;
+    transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
-    background-color: $secondary;
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1);
-    background-color: $primary;
   }
 }
 </style>

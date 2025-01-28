@@ -21,10 +21,22 @@ const text = ref(props.text);
   -webkit-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    animation: shake 0.5s linear;
     cursor: pointer;
+    animation: shake 0.5s ease-in-out;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
 

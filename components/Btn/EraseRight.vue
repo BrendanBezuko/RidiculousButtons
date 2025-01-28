@@ -26,6 +26,8 @@ const text = ref(props.text);
   overflow: hidden;
   transition: box-shadow 0.5s ease;
   z-index: 1;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &:hover {
     cursor: pointer;

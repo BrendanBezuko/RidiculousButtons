@@ -46,4 +46,9 @@ const text = ref(props.text);
     transform: translate(10%, 0%);
   }
 }
+
+.btn span {
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
 </style>

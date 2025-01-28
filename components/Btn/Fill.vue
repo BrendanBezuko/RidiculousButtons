@@ -24,17 +24,29 @@ const text = ref(props.text);
   -moz-box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   box-shadow: 13px 13px 37px -3px rgba(0, 0, 0, 0.57);
   position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 
   &::after {
     position: absolute;
     top: 0;
     bottom: 0;
+    transition: all 0.3s ease;
   }
 
   &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background-color: $primary;
     color: $light_text;
-    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }
 
