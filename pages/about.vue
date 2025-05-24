@@ -5,13 +5,13 @@
     <h3>Built with Nuxt 3 and Sass</h3>
 
     <p>
-      The focus of this project is to develop high quality buttons using CSS and
+      The focus of this project is to develop high quality ui components using CSS and
       SCSS, avoiding any use of pre built styles such as shacdn, tailwind,
       bootstrap. The goal in doing so is to come up with unique looking
       components.
     </p>
 
-    <h3>About Buttons</h3>
+    <h3>This started with Buttons</h3>
 
     <p>
       The word "button" originates from the Old French word "boton," which
@@ -39,6 +39,8 @@
       unique virtual buttons, I like to think I’m honoring the word’s rich
       history and the ingenuity of button makers.
     </p>
+
+    <p>This project started out with a colelction of buttons and now has grown to include other ui components.</p>
   </div>
 </template>
 

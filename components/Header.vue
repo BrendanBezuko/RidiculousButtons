@@ -132,7 +132,7 @@
       />
     </svg>
     <h1 class="poppins-bold">Ridiculous Buttons</h1>
-    <p>Stand out with this collection of Nuxt 3 compatible buttons.</p>
+    <p>Stand out with this collection of Nuxt 3 compatible Ui components.</p>
   </div>
 </template>
 
