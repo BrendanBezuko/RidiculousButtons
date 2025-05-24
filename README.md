@@ -1,16 +1,16 @@
-![Ridiculous Buttons logo](./logo.png)
+![Ridiculous Ui logo](./logo.png)
 
-# Ridiculous Buttons
+# Ridiculous Ui
 
-A collection of buttons compatible with the Nuxt framework. This project is a work in progress. I aim to add a large collection of unique and animated buttons that are completely free. Please consider adding attribution and a link to this repo on your website.
+A Ui libarary in progress compatible with the Nuxt framework. I aim to add a large collection of unique animated Ui components that are completely free. Please consider adding attribution and a link to this repo on your website.
 
-Clone this repo and run it locally or visit https://brendanbezuko.github.io/RidiculousButtons/
+Clone this repo and run it locally or visit https://brendanbezuko.github.io/RidiculousUi/
 
 ## Features
 
 - **Light and dark mode**: Every button will be compatible with the color-mode Nuxt module.
-- **Every Button will exist as a SFC**: One great aspect of vue is that the components can exist as a single file (an SFC). Every button can easily be used by simply copying the SFC (clicking the button). N.b. Though these buttons are SFCs (a Vue concept), I'm not going to guarantee Vue compatibility. Instead, I recommend Nuxt.
-- **Easily copy the SFCs**: The built-in preprocessor parses the SFCs and allows you to run the development server, pick a button, press it, and the entire SFC including HTML, SASS, and Javascript will be in your 📋 clipboard 📋 ready to go.
+- **Every Ui component will exist as a SFC**: One great aspect of vue is that the components can exist as a single file (an SFC). Every button can easily be used by simply copying the SFC (clicking the button)
+- **Easily copy the SFCs**: The built-in preprocessor parses the SFCs and allows you to run the development server, pick a component and copy with one click, and the entire SFC including HTML, SASS, and Javascript will be in your 📋 clipboard 📋 ready to go.
 
 ## Philosophy 🎨
 
