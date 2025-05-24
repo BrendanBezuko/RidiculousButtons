@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ["~/assets/scss/main.scss"],
   ssr: true,
   app: {
-    baseURL: "/Ridiculousui/",
+    baseURL: "/RidiculousUi/",
   },
   vite: {
     plugins: [
