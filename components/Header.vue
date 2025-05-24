@@ -131,7 +131,7 @@
         style="stroke-width: 0.00439233"
       />
     </svg>
-    <h1 class="poppins-bold">Ridiculous Buttons</h1>
+    <h1 class="poppins-bold">Ridiculous Ui</h1>
     <p>Stand out with this collection of Nuxt 3 compatible Ui components.</p>
   </div>
 </template>
